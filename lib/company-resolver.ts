@@ -128,7 +128,7 @@ export function extractCompanyNames(text: string): string[] {
     }
   });
   
-  return [...new Set(companies)]; // Remove duplicates
+  return Array.from(new Set(companies)); // Remove duplicates
 }
 
 /**
